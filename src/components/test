@@ -1,0 +1,7 @@
+<Section title={'Statistics'}>
+  {total === 0 ? (
+    <Notification message={'There is no feedback'}></Notification>
+  ) : (
+    <Statistics state={this.state} total={total} rate={rate}></Statistics>
+  )}
+</Section>;

@@ -1,5 +1,7 @@
-@import-normalize; /* bring in normalize.css styles */
+import { createGlobalStyle } from 'styled-components';
+import 'modern-normalize';
 
+export const GlobalStyle = createGlobalStyle`
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -14,13 +16,29 @@ code {
     monospace;
 }
 
-ul:hover :fu {
+ul {
   list-style: none;
-  background-color: lightblue;
-  border-radius: 12px;
-  border: 2px solid gray;
+  margin: 0;
+padding: 0;
 }
 
-section:not(:last-child) {
-  padding: 32px;
+li:not(:last-child){
+    margin-bottom:12px;
 }
+
+img{
+    display: block;
+}
+
+p{
+    margin: 0;
+}
+
+h1, h2, h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+button {
+  cursor: pointer;
+}`;

@@ -1,11 +1,11 @@
-export const Statistics = ({ state: { good, neutral, bad } }) => {
+export const Statistics = ({ state: { good, neutral, bad }, total, rate }) => {
   return (
     <ul>
-      <li>good={good}</li>
-      <li>neutral={neutral}</li>
-      <li>bad={bad}</li>
-      <li>total=</li>
-      <li>positivePercentage=</li>
+      <li>Good: {good}</li>
+      <li>Neutral: {neutral}</li>
+      <li>Bad: {bad}</li>
+      <li>Total: {total}</li>
+      <li>Positive feedback: {rate}%</li>
     </ul>
   );
 };
